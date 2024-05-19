@@ -24,9 +24,11 @@ First, you will need to download the GeoLiteCity database. This database is used
     - Ensure the GeoLiteCity database files are accessible from your project. You will use these files to translate IP addresses into geolocation coordinates.
       
 
+
 ## Downloading Wireshark 🔻🔻
 
 In addition to the GeoLiteCity database, you will also need the Wireshark application to capture network traffic on your device. The captured traffic will serve as input to our Python script and will be visualized using Google Maps.
+
 
 ### Steps to Download and Install Wireshark 🔥❗
 
@@ -41,6 +43,7 @@ In addition to the GeoLiteCity database, you will also need the Wireshark applic
    - Start capturing traffic and save the capture file for use with your Python script.
 
 With Wireshark installed and configured, you can capture the network traffic data that will be processed and visualized using Google Maps in the subsequent steps of the readme.
+
 
 ## Downloading Python 3 🔻🔻
 The final resource you'll need is Python 3, required to run and compile the code in this tutorial. If you do not already have Python installed on your device, you can download it from the official Python website.
@@ -81,6 +84,8 @@ With Wireshark installed, it's time to create our input data, which will consist
        <img src="https://img.shields.io/badge/-Microsoft_Sentinel-0078D4?&style=for-the-badge&logo=Microsoft&logoColor=white" /> 
      </div>
 
+When selecting an interface, Wireshark automatically starts a new capture, which is why you immediately get prompted with network traffic.
+
 3. **Start Capturing Traffic**:
    - Wireshark will begin capturing all network traffic on the selected interface.
    - Perform the network activities you want to monitor during this capture period.
@@ -88,9 +93,14 @@ With Wireshark installed, it's time to create our input data, which will consist
      <div> 
        <img src="https://img.shields.io/badge/-Microsoft_Sentinel-0078D4?&style=for-the-badge&logo=Microsoft&logoColor=white" /> 
      </div>
-     
+
 4. **Stop the Capture**:
    - After you have captured sufficient data, click on the red square (Stop) button in Wireshark to stop the capture.
+
+Once the capture has been stopped you need to export the captured data in pcap format, this can be done by clicking File -> Export Specified Packets.
+     <div> 
+       <img src="https://img.shields.io/badge/-Microsoft_Sentinel-0078D4?&style=for-the-badge&logo=Microsoft&logoColor=white" /> 
+     </div>
 
 5. **Save the Capture File**:
    - Go to `File > Save As` and choose a location to save the captured data.
