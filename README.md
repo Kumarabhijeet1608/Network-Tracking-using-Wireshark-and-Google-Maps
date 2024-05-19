@@ -100,7 +100,7 @@ When selecting an interface, Wireshark automatically starts a new capture, which
    - Perform the network activities you want to monitor during this capture period.
 
      <div> 
-       <img src="https://img.shields.io/badge/-Microsoft_Sentinel-0078D4?&style=for-the-badge&logo=Microsoft&logoColor=white" /> 
+       <img src="https://github.com/Kumarabhijeet1608/Network-Tracking-using-Wireshark-and-Google-Maps/blob/main/2.png" /> 
      </div>
 
 4. **Stop the Capture**:
@@ -108,7 +108,7 @@ When selecting an interface, Wireshark automatically starts a new capture, which
 
 Once the capture has been stopped you need to export the captured data in pcap format, this can be done by clicking File -> Export Specified Packets.
       <div> 
-         <img src="https://img.shields.io/badge/-Microsoft_Sentinel-0078D4?&style=for-the-badge&logo=Microsoft&logoColor=white" /> 
+         <img src="https://github.com/Kumarabhijeet1608/Network-Tracking-using-Wireshark-and-Google-Maps/blob/main/3.png" /> 
       </div>
 
 5. **Save the Capture File**:
@@ -116,7 +116,7 @@ Once the capture has been stopped you need to export the captured data in pcap f
    - Save the file with a `.pcap` extension. Ex: wire.pcap
 
      <div> 
-       <img src="https://img.shields.io/badge/-Microsoft_Sentinel-0078D4?&style=for-the-badge&logo=Microsoft&logoColor=white" /> 
+       <img src="https://github.com/Kumarabhijeet1608/Network-Tracking-using-Wireshark-and-Google-Maps/blob/main/4.png" /> 
      </div>
      
 This pcap file will serve as the input for our Python script and will be the data displayed on Google Maps in the subsequent steps of the readme.
