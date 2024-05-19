@@ -113,7 +113,7 @@ Once the capture has been stopped you need to export the captured data in pcap f
 
 5. **Save the Capture File**:
    - Go to `File > Save As` and choose a location to save the captured data.
-   - Save the file with a `wire.pcap` extension.
+   - Save the file with a `.pcap` extension. Ex: wire.pcap
 
      <div> 
        <img src="https://img.shields.io/badge/-Microsoft_Sentinel-0078D4?&style=for-the-badge&logo=Microsoft&logoColor=white" /> 
