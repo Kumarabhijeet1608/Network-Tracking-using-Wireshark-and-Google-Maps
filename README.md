@@ -85,7 +85,7 @@ With Wireshark installed, it's time to create our input data, which will consist
    - Wireshark will begin capturing all network traffic on the selected interface.
    - Perform the network activities you want to monitor during this capture period.
 
-<div> 
+     <div> 
        <img src="https://img.shields.io/badge/-Microsoft_Sentinel-0078D4?&style=for-the-badge&logo=Microsoft&logoColor=white" /> 
      </div>
      
@@ -96,7 +96,7 @@ With Wireshark installed, it's time to create our input data, which will consist
    - Go to `File > Save As` and choose a location to save the captured data.
    - Save the file with a `.pcap` extension.
 
-<div> 
+     <div> 
        <img src="https://img.shields.io/badge/-Microsoft_Sentinel-0078D4?&style=for-the-badge&logo=Microsoft&logoColor=white" /> 
      </div>
      
