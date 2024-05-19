@@ -7,9 +7,10 @@ This project demonstrates how to visualize network traffic using Python, Wiresha
 In addition to the Python code created in this tutorial, several external resources and applications are needed to ensure everything works smoothly.
 
 
-## Downloading GeoLiteCity Database 🔻🔻
+## Downloading GeoLiteCity Database ✔🔥
 <details>
   <summary>Click to expand</summary>
+  
 First, you will need to download the GeoLiteCity database. This database is used to translate an IP address into a geolocation (longitude & latitude).
 
 ### Steps to Download 🔥❗
@@ -26,8 +27,10 @@ First, you will need to download the GeoLiteCity database. This database is used
     - Ensure the GeoLiteCity database files are accessible from your project. You will use these files to translate IP addresses into geolocation coordinates.      
 </details>
 
-## Downloading Wireshark 🔻🔻
-
+## Downloading Wireshark ✔🔥
+<details>
+  <summary>Click to expand</summary>
+  
 In addition to the GeoLiteCity database, you will also need the Wireshark application to capture network traffic on your device. The captured traffic will serve as input to our Python script and will be visualized using Google Maps.
 
 
@@ -44,9 +47,12 @@ In addition to the GeoLiteCity database, you will also need the Wireshark applic
    - Start capturing traffic and save the capture file for use with your Python script.
 
 With Wireshark installed and configured, you can capture the network traffic data that will be processed and visualized using Google Maps in the subsequent steps of the readme.
+</details>
 
-
-## Downloading Python 3 🔻🔻
+## Downloading Python 3 ✔🔥
+<details>
+  <summary>Click to expand</summary>
+  
 The final resource you'll need is Python 3, required to run and compile the code in this tutorial. If you do not already have Python installed on your device, you can download it from the official Python website.
 
 ### Steps to Download and Install Python 3 🔥❗
@@ -65,6 +71,7 @@ The final resource you'll need is Python 3, required to run and compile the code
      python3 --version
      ```
    - Ensure the version displayed is Python 3.x.x.
+</details>
 
 With Python 3 installed on your device, you will be ready to compile and run the Python scripts provided in this readme to process and visualize network traffic data using Google Maps.
 
