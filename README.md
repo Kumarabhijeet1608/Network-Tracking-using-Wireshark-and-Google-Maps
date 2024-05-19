@@ -209,7 +209,7 @@ Be aware that in the above example, I have masked my source IP address with "x.x
 
 The reason for this is that our captured pcap data file contains internal IP addresses, which are not known outside our home network. Capturing the external IP automatically would require additional steps and is beyond the scope of this tutorial.
 
-# When the above code is executed using:
+# Execute the above code using:
 
 ```python
 if __name__ == '__main__':
