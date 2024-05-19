@@ -203,7 +203,7 @@ def retKML(dstip, srcip):
     except:
         return ''
 ```
-# In the above method Geo locations are located for each IP address followed by a conversion into KML format.
+In the above method, Geo locations are located for each IP address followed by a conversion into KML format.
 
 Be aware that in the above example, I have masked my source IP address with "x.xxx.xxx.xxx". To make the code work for your network, you will need to navigate to [https://www.whatsmyip.org/](https://www.whatsmyip.org/) and locate your IP address, then replace "x.xxx.xxx.xxx" with your actual IP address in the code.
 
