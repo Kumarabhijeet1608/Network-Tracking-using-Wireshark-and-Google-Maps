@@ -113,7 +113,7 @@ Once the capture has been stopped you need to export the captured data in pcap f
 This pcap file will serve as the input for our Python script and will be the data displayed on Google Maps in the subsequent steps of the readme.
 
 
-# Python Implementation 💸💸
+# Python Implementation 👩‍💻👨‍💻
 # First, import the necessary libraries
 
 ```python
@@ -226,8 +226,7 @@ The reason for this is that our captured pcap data file contains internal IP add
 
 
 
-## Execution Steps in Kali Linux 👩‍💻👨‍💻
-
+## Execution Steps in Kali Linux 
 
 - `ifconfig`
 - `wlan0 (Wireless Setup)`
