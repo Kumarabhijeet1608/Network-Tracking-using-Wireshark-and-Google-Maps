@@ -209,59 +209,39 @@ Be aware that in the above example, I have masked my source IP address with "x.x
 
 The reason for this is that our captured pcap data file contains internal IP addresses, which are not known outside our home network. Capturing the external IP automatically would require additional steps and is beyond the scope of this tutorial.
 
+# When the above code is executed using:
 
+```python
+if __name__ == '__main__':
+    main()
+```
 
+## Adding Data to Google Maps
 
+With our newly created .kml file, we’re now ready to add it to Google Maps. 
 
+1. Navigate to [Google My Maps](https://www.google.com/mymaps).
+2. Create a new map or select an existing one.
+3. Click on "Import" and select "Import from file".
+4. Choose the .kml file that we generated earlier.
+5. Once uploaded, the data from the .kml file will be displayed on your map.
+6. Now you should see the network traffic being displayed on the map.
 
-
-
-
-
-
-
-
-
-
-
-
-
-## Execution Steps in Kali Linux 
-
-- `ifconfig`
-- `wlan0 (Wireless Setup)`
-  - `ifconfig wlan0 down                   # We are closing it.`
-  - `iwconfig wlan0 mode monitor           # Set it to monitor mode.`
-  - `ifconfig wlan0 up                     # We are turning it on.`
-- `ifconfig                                # To check it for monitor mode.`
-- `ls                                      # We need to execute the Python Script from the terminal.  `
-- `cd Desktop`
-- `python [File_Name.py]                   # To execute the script.`
+Now you can visualize your network traffic data on Google Maps!
 
 
 ## Features 😎💰
-
-### 1. **Packet Capture**
-- Captures live network packets on a specified wireless interface.
-- Utilizes Scapy, a powerful Python library for network packet manipulation.
-
-### 2. **Probe Request Detection**
-- Identifies and captures 802.11 probe request packets.
-- Extracts the SSID (network name) from probe requests.
-
-### 3. **Unique SSID Logging**
-- Maintains a list of unique SSIDs detected from probe requests.
-- Avoids duplicate entries by checking if the SSID is already logged.
-
-### 4. **Real-time Notification**
-- Prints a notification to the console whenever a new probe request with a unique SSID is detected.
-- Provides real-time updates for immediate insights.
+- Capture network traffic data using Wireshark.
+- Process captured data to extract IP addresses.
+- Associate IP addresses with geographic locations using the GeoLiteCity database.
+- Generate a KML file containing geolocated data.
+- Upload and visualize the data on Google Maps.
 
 
 ## Installation
 To get started, clone the repository and install the required dependencies.
 
 ```bash
-git clone https://github.com/yourusername/python-sniffing-project.git
-cd python-sniffing-project
+git clone https://github.com/yourusername/Network-Tracking-using-Wireshark-and-Google-Maps.git
+cd python-Network-Tracking-using-Wireshark-and-Google-Maps
 pip install -r requirements.txt
