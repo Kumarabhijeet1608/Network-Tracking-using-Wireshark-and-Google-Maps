@@ -112,8 +112,8 @@ Once the capture has been stopped you need to export the captured data in pcap f
       </div>
 
 5. **Save the Capture File**:
-   - Go to `File > Save As` and choose a location to save the captured data.
-   - Save the file with a `.pcap` extension. Ex: wire.pcap
+   - Save the file with a `.pcap` extension.
+   - Ex: wire.pcap
 
      <div> 
        <img src="https://github.com/Kumarabhijeet1608/Network-Tracking-using-Wireshark-and-Google-Maps/blob/main/4.png" /> 
