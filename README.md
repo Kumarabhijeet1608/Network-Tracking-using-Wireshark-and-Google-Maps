@@ -98,9 +98,9 @@ When selecting an interface, Wireshark automatically starts a new capture, which
    - After you have captured sufficient data, click on the red square (Stop) button in Wireshark to stop the capture.
 
 Once the capture has been stopped you need to export the captured data in pcap format, this can be done by clicking File -> Export Specified Packets.
-      `<div> 
+      <div> 
          <img src="https://img.shields.io/badge/-Microsoft_Sentinel-0078D4?&style=for-the-badge&logo=Microsoft&logoColor=white" /> 
-      </div>`
+      </div>
 
 5. **Save the Capture File**:
    - Go to `File > Save As` and choose a location to save the captured data.
@@ -124,32 +124,109 @@ import pygeoip
 gi = pygeoip.GeoIP('GeoLiteCity.dat')
 ```
 
+As you might observe, a variable is initialized with the GeoLiteCity database that was downloaded earlier. Ensure that the GeoLiteCity.dat file is placed in the root folder of your Python project unless you intend to modify the path of the variable.
 
+# Implementing the Main Method
+Next, you will implement the main method, which will open your captured data, and create the header and footer of the KML file. This KML file will serve as the output file that we will upload to Google Maps.
 
+## Steps:
 
+1. **Open Captured Data**:
+   - Open your captured data file (`.pcap`) located at the root of the project.
 
+2. **Create Header and Footer**:
+   - Generate the header and footer of the KML file, which is the output file that we will upload to Google Maps.
+  
+Again be sure to place you captured .pcap file in the root of the project and change the name of the code below if you did not save it under the name wire.pcap
 
-
-
-
-## Python Script  ✔🔥
-## Here's a simple Python Script using Scapy to sniff for WiFi probe requests.
+## Python Code:
 
 ```python
-from scapy.all import *
-
-interface = 'wlan0'
-probeReqs = []
-
-def sniffProbes(p):
-    if p.haslayer(Dot11ProbeReq):
-        netName = p.getlayer(Dot11ProbeReq).info.decode('utf-8', errors='ignore')
-        if netName not in probeReqs:
-            probeReqs.append(netName)
-            print('[+] Detected New Probe Request: ' + netName)
-
-sniff(iface=interface, prn=sniffProbes)
+def main():
+    f = open('wire.pcap', 'rb')
+    pcap = dpkt.pcap.Reader(f)
+    kmlheader = '<?xml version="1.0" encoding="UTF-8"?> \n<kml xmlns="http://www.opengis.net/kml/2.2">\n<Document>\n'\
+    '<Style id="transBluePoly">' \
+                '<LineStyle>' \
+                '<width>1.5</width>' \
+                '<color>501400E6</color>' \
+                '</LineStyle>' \
+                '</Style>'
+    kmlfooter = '</Document>\n</kml>\n'
+    kmldoc=kmlheader+plotIPs(pcap)+kmlfooter
+    print(kmldoc)
 ```
+
+# If you wish to change the styling of the lines that will be drawn in Google Maps, you will do so in the above code under the <style></style> tags.
+
+# Next, we'll add the method that will loop over our captured network data and extract the IP addresses.
+
+```python
+def plotIPs(pcap):
+    kmlPts = ''
+    for (ts, buf) in pcap:
+        try:
+            eth = dpkt.ethernet.Ethernet(buf)
+            ip = eth.data
+            src = socket.inet_ntoa(ip.src)
+            dst = socket.inet_ntoa(ip.dst)
+            KML = retKML(dst, src)
+            kmlPts = kmlPts + KML
+        except:
+            pass
+    return kmlPts
+```
+
+# In the plotIPs(pcap) method mentioned above, the application will iterate over our pcap data and extract the source and destination IP addresses of each captured network packet.
+
+# However, our IP addresses alone cannot be used as input to Google Maps. We first need to associate each IP address with a geographic location. This will be accomplished using the following method:
+
+```python
+def retKML(dstip, srcip):
+    dst = gi.record_by_name(dstip)
+    src = gi.record_by_name('x.xxx.xxx.xxx')
+    try:
+        dstlongitude = dst['longitude']
+        dstlatitude = dst['latitude']
+        srclongitude = src['longitude']
+        srclatitude = src['latitude']
+        kml = (
+            '<Placemark>\n'
+            '<name>%s</name>\n'
+            '<extrude>1</extrude>\n'
+            '<tessellate>1</tessellate>\n'
+            '<styleUrl>#transBluePoly</styleUrl>\n'
+            '<LineString>\n'
+            '<coordinates>%6f,%6f\n%6f,%6f</coordinates>\n'
+            '</LineString>\n'
+            '</Placemark>\n'
+        )%(dstip, dstlongitude, dstlatitude, srclongitude, srclatitude)
+        return kml
+    except:
+        return ''
+```
+# In the above method Geo locations are located for each IP address followed by a conversion into KML format.
+
+Be aware that in the above example, I have masked my source IP address with "x.xxx.xxx.xxx". To make the code work for your network, you will need to navigate to [https://www.whatsmyip.org/](https://www.whatsmyip.org/) and locate your IP address, then replace "x.xxx.xxx.xxx" with your actual IP address in the code.
+
+The reason for this is that our captured pcap data file contains internal IP addresses, which are not known outside our home network. Capturing the external IP automatically would require additional steps and is beyond the scope of this tutorial.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Execution Steps in Kali Linux 👩‍💻👨‍💻
 
