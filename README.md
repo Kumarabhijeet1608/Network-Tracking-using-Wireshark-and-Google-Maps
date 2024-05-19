@@ -71,16 +71,17 @@ The final resource you'll need is Python 3, required to run and compile the code
      python3 --version
      ```
    - Ensure the version displayed is Python 3.x.x.
-</details>
 
 With Python 3 installed on your device, you will be ready to compile and run the Python scripts provided in this readme to process and visualize network traffic data using Google Maps.
-
+</details>
 
 ## Capturing Network Traffic 📷📸
 With Wireshark installed, it's time to create our input data, which will consist of a captured pcap file. This file will include all network traffic to and from our device during the capture period.
 
 ### Steps to Capture Network Traffic
-
+<details>
+  <summary>Click to expand</summary>
+  
 1. **Open Wireshark**:
    - Launch the Wireshark application on your device.
 
@@ -119,7 +120,7 @@ Once the capture has been stopped you need to export the captured data in pcap f
      </div>
      
 This pcap file will serve as the input for our Python script and will be the data displayed on Google Maps in the subsequent steps of the readme.
-
+</details>
 
 # Python Implementation 👩‍💻👨‍💻
 # First, import the necessary libraries
