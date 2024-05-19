@@ -175,9 +175,9 @@ def plotIPs(pcap):
     return kmlPts
 ```
 
-# In the plotIPs(pcap) method mentioned above, the application will iterate over our pcap data and extract the source and destination IP addresses of each captured network packet.
+In the plotIPs(pcap) method mentioned above, the application will iterate over our pcap data and extract the source and destination IP addresses of each captured network packet.
 
-# However, our IP addresses alone cannot be used as input to Google Maps. We first need to associate each IP address with a geographic location. This will be accomplished using the following method:
+However, our IP addresses alone cannot be used as input to Google Maps. We first need to associate each IP address with a geographic location. This will be accomplished using the following method:
 
 ```python
 def retKML(dstip, srcip):
