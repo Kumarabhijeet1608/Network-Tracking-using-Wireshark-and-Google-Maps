@@ -8,6 +8,8 @@ In addition to the Python code created in this tutorial, several external resour
 
 
 ## Downloading GeoLiteCity Database 🔻🔻
+<details>
+  <summary>Click to expand</summary>
 First, you will need to download the GeoLiteCity database. This database is used to translate an IP address into a geolocation (longitude & latitude).
 
 ### Steps to Download 🔥❗
@@ -21,9 +23,8 @@ First, you will need to download the GeoLiteCity database. This database is used
    git clone https://github.com/mbcc2006/GeoLiteCity-data.git
 
 3. **Integrate with Your Project**:
-    - Ensure the GeoLiteCity database files are accessible from your project. You will use these files to translate IP addresses into geolocation coordinates.
-      
-
+    - Ensure the GeoLiteCity database files are accessible from your project. You will use these files to translate IP addresses into geolocation coordinates.      
+</details>
 
 ## Downloading Wireshark 🔻🔻
 
