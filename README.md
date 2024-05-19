@@ -98,9 +98,9 @@ When selecting an interface, Wireshark automatically starts a new capture, which
    - After you have captured sufficient data, click on the red square (Stop) button in Wireshark to stop the capture.
 
 Once the capture has been stopped you need to export the captured data in pcap format, this can be done by clicking File -> Export Specified Packets.
-<div> 
-      <img src="https://img.shields.io/badge/-Microsoft_Sentinel-0078D4?&style=for-the-badge&logo=Microsoft&logoColor=white" /> 
-</div>
+      `<div> 
+         <img src="https://img.shields.io/badge/-Microsoft_Sentinel-0078D4?&style=for-the-badge&logo=Microsoft&logoColor=white" /> 
+      </div>`
 
 5. **Save the Capture File**:
    - Go to `File > Save As` and choose a location to save the captured data.
