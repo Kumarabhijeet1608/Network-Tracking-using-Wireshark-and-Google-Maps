@@ -156,9 +156,7 @@ def main():
     kmldoc=kmlheader+plotIPs(pcap)+kmlfooter
     print(kmldoc)
 ```
-
 If you wish to change the styling of the lines that will be drawn in Google Maps, you will do so in the above code under the <style></style> tags.
-
 Next, we'll add the method that will loop over our captured network data and extract the IP addresses.
 
 ```python
