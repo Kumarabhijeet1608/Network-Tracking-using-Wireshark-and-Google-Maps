@@ -90,7 +90,7 @@ With Wireshark installed, it's time to create our input data, which will consist
    - Double-click on the interface to start capturing.
   
      <div> 
-       <img src="https://img.shields.io/badge/-Microsoft_Sentinel-0078D4?&style=for-the-badge&logo=Microsoft&logoColor=white](https://github.com/Kumarabhijeet1608/Network-Tracking-using-Wireshark-and-Google-Maps/blob/main/1.png" /> 
+       <img src="https://github.com/Kumarabhijeet1608/Network-Tracking-using-Wireshark-and-Google-Maps/blob/main/1.png" /> 
      </div>
 
 When selecting an interface, Wireshark automatically starts a new capture, which is why you immediately get prompted with network traffic.
