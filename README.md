@@ -236,7 +236,7 @@ With our newly created .kml file, we’re now ready to add it to Google Maps.
 4. Choose the .kml file that we generated earlier.
 5. Once uploaded, the data from the .kml file will be displayed on your map.
 <div> 
-       <img src="https://github.com/Kumarabhijeet1608/Network-Tracking-using-Wireshark-and-Google-Maps/blob/main/2.png" /> 
+       <img src="https://github.com/Kumarabhijeet1608/Network-Tracking-using-Wireshark-and-Google-Maps/blob/main/5.png" /> 
      </div>   
 6. Now you should see the network traffic being displayed on the map.
 
