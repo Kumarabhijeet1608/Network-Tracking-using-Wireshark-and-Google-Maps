@@ -227,6 +227,7 @@ if __name__ == '__main__':
 
 ## Adding Data to Google Maps
 
+After executing the code, save the output into Wordpad with a .kml extension.
 With our newly created .kml file, we’re now ready to add it to Google Maps. 
 
 1. Navigate to [Google My Maps](https://www.google.com/mymaps).
@@ -234,6 +235,9 @@ With our newly created .kml file, we’re now ready to add it to Google Maps.
 3. Click on "Import" and select "Import from file".
 4. Choose the .kml file that we generated earlier.
 5. Once uploaded, the data from the .kml file will be displayed on your map.
+<div> 
+       <img src="https://github.com/Kumarabhijeet1608/Network-Tracking-using-Wireshark-and-Google-Maps/blob/main/2.png" /> 
+     </div>   
 6. Now you should see the network traffic being displayed on the map.
 
 Now you can visualize your network traffic data on Google Maps!
