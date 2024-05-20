@@ -9,7 +9,7 @@ In addition to the Python code created in this tutorial, several external resour
 
 ## Downloading GeoLiteCity Database ✔🔥
 <details>
-  <summary>Click to expand</summary>
+  <summary style="color: red;">Click to expand</summary>
   
 First, you will need to download the GeoLiteCity database. This database is used to translate an IP address into a geolocation (longitude & latitude).
 
@@ -29,7 +29,7 @@ First, you will need to download the GeoLiteCity database. This database is used
 
 ## Downloading Wireshark ✔🔥
 <details>
-  <summary>Click to expand</summary>
+  <summary style="color: red;">Click to expand</summary>
   
 In addition to the GeoLiteCity database, you will also need the Wireshark application to capture network traffic on your device. The captured traffic will serve as input to our Python script and will be visualized using Google Maps.
 
@@ -51,7 +51,7 @@ With Wireshark installed and configured, you can capture the network traffic dat
 
 ## Downloading Python 3 ✔🔥
 <details>
-  <summary>Click to expand</summary>
+  <summary style="color: red;">Click to expand</summary>
   
 The final resource you'll need is Python 3, required to run and compile the code in this tutorial. If you do not already have Python installed on your device, you can download it from the official Python website.
 
@@ -80,7 +80,7 @@ With Wireshark installed, it's time to create our input data, which will consist
 
 ### Steps to Capture Network Traffic
 <details>
-  <summary>Click to expand</summary>
+  <summary style="color: red;">Click to expand</summary>
   
 1. **Open Wireshark**:
    - Launch the Wireshark application on your device.
