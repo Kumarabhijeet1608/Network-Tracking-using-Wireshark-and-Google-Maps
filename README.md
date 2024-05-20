@@ -240,7 +240,7 @@ With our newly created .kml file, we’re now ready to add it to Google Maps.
      </div>   
 6. Now you should see the network traffic being displayed on the map.
 
-Now you can visualize your network traffic data on Google Maps!
+- Now you can visualize your network traffic data on Google Maps!
 
 
 ## Features 😎💰
