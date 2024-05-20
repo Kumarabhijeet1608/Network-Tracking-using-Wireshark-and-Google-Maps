@@ -30,7 +30,7 @@ First, you will need to download the GeoLiteCity database. This database is used
 ## Downloading Wireshark ✔🔥
 <details>
   <summary style="color: red;">Click to expand</summary>
-  
+<p>  
 In addition to the GeoLiteCity database, you will also need the Wireshark application to capture network traffic on your device. The captured traffic will serve as input to our Python script and will be visualized using Google Maps.
 
 
@@ -47,12 +47,13 @@ In addition to the GeoLiteCity database, you will also need the Wireshark applic
    - Start capturing traffic and save the capture file for use with your Python script.
 
 With Wireshark installed and configured, you can capture the network traffic data that will be processed and visualized using Google Maps in the subsequent steps of the readme.
+</p>
 </details>
 
 ## Downloading Python 3 ✔🔥
 <details>
   <summary style="color: red;">Click to expand</summary>
-  
+<p>  
 The final resource you'll need is Python 3, required to run and compile the code in this tutorial. If you do not already have Python installed on your device, you can download it from the official Python website.
 
 ### Steps to Download and Install Python 3 🔥❗
@@ -73,6 +74,7 @@ The final resource you'll need is Python 3, required to run and compile the code
    - Ensure the version displayed is Python 3.x.x.
 
 With Python 3 installed on your device, you will be ready to compile and run the Python scripts provided in this readme to process and visualize network traffic data using Google Maps.
+</p>
 </details>
 
 ## Capturing Network Traffic 📷📸
@@ -81,6 +83,7 @@ With Wireshark installed, it's time to create our input data, which will consist
 ### Steps to Capture Network Traffic
 <details>
   <summary style="color: red;">Click to expand</summary>
+<p>  
   
 1. **Open Wireshark**:
    - Launch the Wireshark application on your device.
@@ -120,6 +123,8 @@ Once the capture has been stopped you need to export the captured data in pcap f
      </div>
      
 This pcap file will serve as the input for our Python script and will be the data displayed on Google Maps in the subsequent steps of the readme.
+
+</p>
 </details>
 
 # Python Implementation 👩‍💻👨‍💻
